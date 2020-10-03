@@ -1,0 +1,12 @@
+$default-font: "Roboto", sans-serif;
+
+// добавлять через @extend %...
+%roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+%roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
