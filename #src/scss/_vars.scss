@@ -1,5 +1,8 @@
 $default-font: "Roboto", sans-serif;
 
+$dark: #242a2e;
+$accent: #2fc0d0;
+
 // добавлять через @extend %...
 %roboto-regular {
   font-family: "Roboto", sans-serif;
