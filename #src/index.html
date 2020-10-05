@@ -31,7 +31,9 @@
     </div>
     <ul class="menu__body">
       <li class="menu__item menu__item--active"><a href="#" class="menu__link">Главная</a></li>
+      <!--
       <li class="menu__item"><a href="#" class="menu__link">Обо мне</a></li>
+      -->
       <li class="menu__item"><a href="#" class="menu__link">Портфолио</a></li>
       <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
     </ul>
@@ -82,15 +84,72 @@
         </a>
       </li>
     </ul>
-
-
-
-
   </nav>
 
+  <main class="page-main">
 
+    <section class="developer page-section">
+      <div class="developer__inner">
+        <div class="developer__box">
+          <h1 class="developer__title">Никита Тарасов</h1>
+          <p class="developer__prof">Верстальщик</p>
+          <p class="developer__description">Адаптивная кроссбраузерная верстка сайтов</p>
+          <div class="developer__buttons">
+            <a href="#" class="developer__btn">Связаться</a>
+            <a href="#" class="developer__btn developer__btn--inverted">Посмотреть работы</a>
+          </div>
+        </div>
+        <div class="developer__portrait">
+          <img class="developer__image" src="img/portrait-big.png" width="560" height="610"
+            alt="Фотография Никиты Тарасова">
+        </div>
+      </div>
+    </section>
 
+    <section class="portfolio page-section">
+      <div class="portfolio__inner">
+        <h2 class="portfolio__title">Портфолио</h2>
+        <p class="portfolio__description">Ниже представлены мои избранные работы</p>
+        <ul class="portfolio__tags tags">
+          <li class="tags__item"><a class="tags__link" href="#"></a>Все работы</li>
+          <li class="tags__item"><a class="tags__link" href="#"></a>Все работы</li>
+          <li class="tags__item"><a class="tags__link" href="#"></a>Все работы</li>
+        </ul>
+        <ul class="portfolio__list">
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+        </ul>
+      </div>
+    </section>
 
+    <section class="contacts page-section">
+      <div class="contacts__inner">
+        <h2 class="contacts__title">Контактная информация</h2>
+
+        <!--
+          Добавить контакты:
+          - почта
+          - телега
+        -->
+
+        <form action="#" class="contacts__form">
+          <h3 class="contacts__form-title">Напишите мне</h3>
+          <div class="contacts__inputs">
+            <input class="contacts__input" type="text" name="user-name" id="user-name">
+            <input class="contacts__input" type="email" name="user-email" id="user-email">
+            <input class="contacts__input" type="text" name="subject" id="subject">
+          </div>
+          <textarea class="contacts__textarea" name="message" id="" cols="30" rows="10"></textarea>
+          <button type="submit">Отправить сообщение</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
 
 </body>
 

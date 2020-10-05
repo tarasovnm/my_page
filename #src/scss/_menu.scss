@@ -8,6 +8,7 @@
     height: 200px;
     margin: 0 auto;
 
+    border: 2px solid $accent;
     border-radius: 50%;
     overflow: hidden;
   }
@@ -66,6 +67,10 @@
     color: #ffffff;
     letter-spacing: 1px;
     text-decoration: none;
+
+    &:hover {
+      color: $accent;
+    }
   }
 
   @media (max-width: 767px) {
@@ -164,7 +169,6 @@
     display: block;
     width: 32px;
     height: 32px;
-    //background-color: #c9c9c9;
 
     svg {
       fill: #ffffff;

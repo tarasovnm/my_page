@@ -8,4 +8,138 @@
 .main-menu {
   width: 400px;
   height: 100vh;
+  position: fixed;
+}
+
+.page-main {
+  padding-left: 400px;
+}
+
+.page-section {
+  padding: 120px;
+  min-height: 100vh;
+}
+
+.developer {
+  &__inner {
+    position: relative;
+
+    // временно
+    min-height: 610px;
+  }
+
+  &__box {
+    padding: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    //background-color: rgba($color: $accent, $alpha: 0.2);
+    border: 1px solid $accent;
+  }
+
+  &__title {
+    font-size: 50px;
+    letter-spacing: 2%;
+  }
+
+  &__prof {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2%;
+    color: #8c8c8c;
+  }
+
+  &__description {
+    margin-bottom: 140px;
+    font-size: 20px;
+    letter-spacing: 2%;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__btn {
+    display: block;
+    padding: 12px 25px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2%;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: $accent;
+    border: 1px solid $accent;
+    border-radius: 7px;
+
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      color: $accent;
+      background-color: #ffffff;
+    }
+
+    &--inverted {
+      color: $accent;
+      background-color: #ffffff;
+
+      &:hover {
+        color: #ffffff;
+        background-color: $accent;
+      }
+    }
+  }
+
+  &__portrait {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.portfolio {
+  background-color: rgba($color: $accent, $alpha: 0.4);
+
+  &__title {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2%;
+  }
+
+  &__description {
+    letter-spacing: 2%;
+  }
+
+  &__tags {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 305px;
+    height: 240px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+}
+
+.tags {
+  display: flex;
+
+  &__item {
+    display: block;
+    padding: 3px 20px;
+    margin-right: 10px;
+
+    font-size: 14px;
+    color: $accent;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
 }
