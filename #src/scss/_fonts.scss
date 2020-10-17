@@ -1,5 +1,7 @@
 @import "_mixins/font-face";
 
+// Попробовать в качестве альтернативы испльзовать Raleway шрифт
+
 @include font("Roboto", "Roboto-Regular", 400);
 @include font("Roboto", "Roboto-Bold", 700);
 
