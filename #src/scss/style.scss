@@ -12,9 +12,6 @@
   width: 100%;
   z-index: 5;
 
-  // временно - удалить
-  //background-color: $dark;
-
   &__inner {
     display: flex;
     align-items: center;
@@ -54,17 +51,19 @@
 .page-section {
   position: relative;
   min-height: 100vh;
-  padding-top: 150px;
+  padding-top: 120px;
 }
 
 // developer section ======================================
 
 .developer {
-  padding-top: 170px;
+  display: flex;
+  justify-content: center;
+  padding: 120px 25px 80px 25px;
 
   &__inner {
+    max-width: 1200px;
     position: relative;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -91,13 +90,8 @@
     letter-spacing: 2%;
   }
 
-  &__box {
-    margin-bottom: 32%;
-  }
-
   &__buttons {
     display: flex;
-    //flex-direction: column;
     align-items: flex-start;
   }
 
@@ -137,7 +131,12 @@
     position: absolute;
     right: 0;
     bottom: -32px;
-    width: 63%;
+    //top: -30px;
+
+    img {
+      //height: 90%;
+      max-height: 720px;
+    }
   }
 }
 
