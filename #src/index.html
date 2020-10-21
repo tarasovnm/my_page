@@ -142,22 +142,33 @@
         <div class="contacts__inner">
           <h2 class="contacts__title">Контактная информация</h2>
 
-          <!--
-          Добавить контакты:
-          - почта
-          - телега
-        -->
+          <div class="contacts__box">
+            <div class="contacts__column">
+              <h3 class="contacts__column-title">Всегда на связи</h3>
+              <p class="contacts__column-text">
 
-          <form action="#" class="contacts__form">
-            <h3 class="contacts__form-title">Напишите мне</h3>
-            <div class="contacts__inputs">
-              <input class="contacts__input" type="text" name="user-name" id="user-name">
-              <input class="contacts__input" type="email" name="user-email" id="user-email">
-              <input class="contacts__input" type="text" name="subject" id="subject">
+              </p>
+              <!--
+                Добавить контакты:
+                - почта
+                - телега
+              -->
             </div>
-            <textarea class="contacts__textarea" name="message" id="" cols="30" rows="10"></textarea>
-            <button type="submit">Отправить сообщение</button>
-          </form>
+
+            <div class="contacts__column">
+              <h3 class="contacts__column-title">Напишите мне</h3>
+
+              <form action="#" class="contacts__form">
+                <div class="contacts__inputs">
+                  <input class="contacts__input" type="text" name="user-name" id="user-name">
+                  <input class="contacts__input" type="email" name="user-email" id="user-email">
+                  <input class="contacts__input" type="text" name="subject" id="subject">
+                </div>
+                <textarea class="contacts__textarea" name="message" id="" cols="30" rows="10"></textarea>
+                <button type="submit">Отправить сообщение</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
