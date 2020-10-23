@@ -46,7 +46,7 @@
 
   <main class="page-main">
 
-    <section class="developer page-section">
+    <section class="developer page-section full-page">
       <div class="developer__inner">
         <div class="developer__box">
           <h1 class="developer__title">Никита Тарасов</h1>
@@ -54,8 +54,8 @@
           <p class="developer__description">Адаптивная кроссбраузерная <br> верстка сайтов</p>
         </div>
         <div class="developer__buttons">
-          <a href="#contacts" class="developer__btn">Связаться</a>
-          <a href="#portfolio" class="developer__btn developer__btn--inverted">Посмотреть работы</a>
+          <a href="#contacts" class="developer__btn btn">Связаться</a>
+          <a href="#portfolio" class="developer__btn btn btn--inverted">Посмотреть работы</a>
         </div>
 
         <div class="developer__portrait">
@@ -125,16 +125,6 @@
         </div>
       </div>
 
-      <div class="scroll-btn">
-        <a href="#contacts">
-          <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.64">
-              <path d="M1 1L8.5 8L16 1" stroke="#2fc0d0" />
-            </g>
-          </svg>
-        </a>
-      </div>
-
     </section>
 
     <section class="contacts page-section" id="contacts">
@@ -146,26 +136,49 @@
             <div class="contacts__column">
               <h3 class="contacts__column-title">Всегда на связи</h3>
               <p class="contacts__column-text">
-
+                Буду рад пообщаться! <br>Мои основные каналы для связи:
               </p>
-              <!--
-                Добавить контакты:
-                - почта
-                - телега
-              -->
+
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contacts__link contacts__link--mail"
+                    href="mailto:tarasovnm@gmail.com">tarasovnm@gmail.com</a>
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link contacts__link--tg" href="tg://resolve?domain=shounenbat">@shounenbat</a>
+                </li>
+              </ul>
             </div>
 
             <div class="contacts__column">
               <h3 class="contacts__column-title">Напишите мне</h3>
 
-              <form action="#" class="contacts__form">
-                <div class="contacts__inputs">
-                  <input class="contacts__input" type="text" name="user-name" id="user-name">
-                  <input class="contacts__input" type="email" name="user-email" id="user-email">
-                  <input class="contacts__input" type="text" name="subject" id="subject">
+              <form action="#" class="contacts__form form">
+
+                <div class="form__inputs">
+
+                  <div class="form__item form__item--short">
+                    <input class="form__input" type="text" name="user-name" id="user-name" placeholder="Имя">
+                  </div>
+
+                  <div class="form__item form__item--short">
+                    <input class="form__input" type="email" name="user-email" id="user-email" placeholder="E-Mail">
+                  </div>
+
+                  <div class="form__item">
+                    <input class="form__input" type="text" name="subject" id="subject" placeholder="Тема сообщения">
+                  </div>
+
                 </div>
-                <textarea class="contacts__textarea" name="message" id="" cols="30" rows="10"></textarea>
-                <button type="submit">Отправить сообщение</button>
+
+                <div class="form__item">
+                  <textarea class="form__textarea" name="message" id="" cols="30" rows="10"
+                    placeholder="Текст сообщения"></textarea>
+                </div>
+
+
+                <button class="form__button" type="submit">Отправить сообщение</button>
+
               </form>
             </div>
           </div>
@@ -174,6 +187,10 @@
     </section>
 
   </main>
+
+  <footer class="footer">
+    <p class="footer__text">Никита Тарасов © 2020</p>
+  </footer>
 
 </body>
 
